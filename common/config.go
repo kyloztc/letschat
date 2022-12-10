@@ -6,7 +6,8 @@ type Properties struct {
 
 type MysqlProperties struct {
 	Host     string `yaml:"host"`
-	Port     string `yaml:"port"`
+	Port     int `yaml:"port"`
 	UserName string `yaml:"userName"`
 	Pwd      string `yaml:"pwd"`
+	DbName string `yaml:"dbName"`
 }

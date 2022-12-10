@@ -1,5 +1,6 @@
 mysqlConfig:
-  host: 
-  port: 
-  userName: 
-  pwd: 
+  host: 127.0.0.1
+  port: 13306
+  userName: root
+  pwd: hello@chat
+  dbName: chat

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package proto;
+option go_package ="./proto";
+
+message RegisterUserReq {
+    string account = 1;
+    string pwd = 2;
+    string nickName = 3;
+}

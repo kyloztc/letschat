@@ -18,29 +18,29 @@ type LocalLog struct {
 }
 
 func (g *LocalLog) Info(logInfo string) {
-	fmt.Println(getCurrentTime() + " info: " + logInfo)
+	fmt.Println(getCurrentTime() + "|info|" + logInfo)
 }
 
 func (g *LocalLog) Debug(logInfo string) {
-	fmt.Println(getCurrentTime() + " debug: " + logInfo)
+	fmt.Println(getCurrentTime() + "|debug|" + logInfo)
 }
 
 func (g *LocalLog) Error(logInfo string) {
-	fmt.Println(getCurrentTime() + " error: " + logInfo)
+	fmt.Println(getCurrentTime() + "|error|" + logInfo)
 }
 
 func (g *LocalLog) Infof(format string, item ...interface{}) {
-	_format := getCurrentTime() + " info: " + format + "\n"
+	_format := getCurrentTime() + "|info|" + format + "\n"
 	fmt.Printf(_format, item...)
 }
 
 func (g *LocalLog) Debugf(format string, item ...interface{}) {
-	_format := getCurrentTime() + " debug: " + format + "\n"
+	_format := getCurrentTime() + "|debug|" + format + "\n"
 	fmt.Printf(_format, item...)
 }
 
 func (g *LocalLog) Errorf(format string, item ...interface{}) {
-	_format := getCurrentTime() + " error: " + format + "\n"
+	_format := getCurrentTime() + "|error|" + format + "\n"
 	fmt.Printf(_format, item...)
 }
 
